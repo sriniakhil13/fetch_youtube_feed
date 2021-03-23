@@ -6,7 +6,7 @@ WORKDIR /app
 # our installed requirements rather than reinstall them on every build
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-       #Dockerfile
+#Dockerfile
 # Now copy in our code, and run it
 COPY . .
 EXPOSE 8000
